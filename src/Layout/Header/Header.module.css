@@ -1,0 +1,61 @@
+.header {
+  position: sticky;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 6.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 100;
+}
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+  height: 2.75rem;
+  max-width: 70rem;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+}
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 6.625rem;
+  padding: 0 0.5rem;
+  height: 2.3125rem;
+  background-color: #ebe5f9;
+  border-radius: 6px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.location > span {
+  color: #4b2955;
+  font-size: 0.875rem;
+}
+.location-cart-button-container {
+  width: 10.6875rem;
+  height: 2.3125rem;
+  display: flex;
+  justify-content: space-between;
+}
+.cart-button {
+  width: 2.3125rem;
+  height: 2.3125rem;
+  background-color: #f1e9c9;
+  border-radius: 6px;
+  border: none;
+}
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #c47f17;
+}
+.location-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}

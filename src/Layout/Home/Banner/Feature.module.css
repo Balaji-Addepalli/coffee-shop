@@ -1,0 +1,19 @@
+.feature{
+    display: flex;
+    margin-bottom: 1.25rem;
+    width:100%;
+    gap:0.75rem
+
+}
+.feature-icon{
+    width:32px;
+    height:32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.feature-description{
+    justify-self: flex-end;
+}

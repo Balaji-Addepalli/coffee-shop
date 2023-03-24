@@ -1,0 +1,23 @@
+.selected-items-container{
+    width:31rem;
+    padding:2rem;
+    border-radius:0px 2rem 0px 2rem;
+    background: rgb(243, 242, 242);
+}
+.total-price-container{
+    display: flex;
+    justify-content: space-between;
+}
+.confirm-order-container{
+    width:100%;
+}
+.confirm-order-container>button{
+    width:100%;
+    background: rgb(219, 172, 44);
+    color:white;
+    border:none;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    font-weight: 700;
+}
