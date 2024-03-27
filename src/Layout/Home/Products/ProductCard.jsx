@@ -1,6 +1,4 @@
 import classes from "./ProductCard.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { addToCart } from "../../../coffee-shop-redux/slices/cartSlice";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
@@ -66,7 +64,7 @@ const ProductCard = ({ product }) => {
                   setProductAmount(1);
                 }}
               >
-                <FontAwesomeIcon icon={faCartShopping} />
+                add to cart
               </button>
             </div>
           </div>

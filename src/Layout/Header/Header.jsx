@@ -1,9 +1,5 @@
 import classes from "./Header.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLocationDot,
-  faCartShopping,
-} from "@fortawesome/free-solid-svg-icons";
+
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
@@ -19,16 +15,12 @@ const Header = () => {
         </div>
         <div className={classes["location-cart-button-container"]}>
           <div className={classes.location}>
-            <FontAwesomeIcon
-              className={classes["location-icon"]}
-              icon={faLocationDot}
-              color="#8047f8"
-            />
+            location
             <span>Fortaleza, CE</span>
           </div>
           <Link to={"/cart"}>
             <button className={classes["cart-button"]}>
-              <FontAwesomeIcon className={classes.icon} icon={faCartShopping} />
+              cart shopping
             </button>
           </Link>
         </div>

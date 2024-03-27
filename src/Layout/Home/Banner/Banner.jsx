@@ -1,33 +1,28 @@
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { faBoxesPacking } from "@fortawesome/free-solid-svg-icons";
-import { faStopwatch } from "@fortawesome/free-solid-svg-icons";
-import { faMugHot } from "@fortawesome/free-solid-svg-icons";
 import Feature from "./Feature";
 import classes from "./Banner.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Banner = () => {
   const features = [
     {
       id: 1,
-      icon: faCartShopping,
+      icon: ()=><>shopping</>,
       description: "Compra simples e segura",
       backgroundColor: '#c47f17'
     },
     {
       id: 2,
-      icon: faBoxesPacking,
+      icon: ()=><>faBoxesPacking</>,
       description: "Embalagem mantém o café intacto",
       backgroundColor: '#574f4d'
     },
     {
       id: 3,
-      icon: faStopwatch,
+      icon: ()=><>faStopwatch</>,
       description: "Entrega rápida e rastreada",
       backgroundColor: '#dbac2c'
     },
     {
       id: 4,
-      icon: faMugHot,
+      icon: ()=><>faMugHot</>,
       description: "O café chega fresquinho até você",
       backgroundColor: '#8047f8'
     },
@@ -49,7 +44,7 @@ const Banner = () => {
                 description={feature.description}
                 backgroundColor = {feature.backgroundColor}
               >
-                <FontAwesomeIcon icon={feature.icon} color='#ffffff'/>
+               <feature.icon></feature.icon>
               </Feature>
             ))}
           </div>

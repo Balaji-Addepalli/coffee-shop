@@ -1,5 +1,3 @@
-import { faMinus, faPlus, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classes from "./CartItem.module.css";
 import { useDispatch } from "react-redux";
 import {
@@ -43,7 +41,7 @@ const CartItem = ({ product }) => {
                 }}
                 className={classes["decrement-button"]}
               >
-                <FontAwesomeIcon color="#8047f8" icon={faMinus} />
+                -
               </div>
               <div>{product.amount}</div>
               <div
@@ -52,16 +50,12 @@ const CartItem = ({ product }) => {
                 }}
                 className={classes["increment-button"]}
               >
-                <FontAwesomeIcon color="#8047f8" icon={faPlus} />
+            +
               </div>
             </div>
             <div className={classes["remover-button-container"]}>
               <div onClick={()=>{dispatch(removeFromCart({product}))}}className={classes["remover-button"]}>
-                <FontAwesomeIcon
-                  color="#8047f8"
-                  icon={faTrashCan}
-                  size={"xs"}
-                />
+                trash
                 <div className={classes["remover-text"]}>REMOVER</div>
               </div>
             </div>
